@@ -6,7 +6,8 @@ public class SumOfSequence {
         Scanner sc = new Scanner(System.in);
         System.out.print("Last Number? ");
         int givenNum = Integer.parseInt(sc.nextLine());
-        int i = 1;
+        System.out.print("first number? ");
+        int i = Integer.parseInt(sc.nextLine());
         int sum = 0;
         while(i <= givenNum){
             sum = sum + i;
