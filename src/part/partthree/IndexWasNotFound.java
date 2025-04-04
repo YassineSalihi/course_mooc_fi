@@ -23,7 +23,7 @@ public class IndexWasNotFound {
                 break;
             }
         }
-        
+
         if (!found) {
             System.out.println(inputSearched + " was not found.");
         }
