@@ -2,24 +2,32 @@ package part.partthree;
 
 import java.util.Scanner;
 
-public class LineByLine {
+public class LetterClub {
 
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Press empty string \" \" to exit.");
+        // System.out.println("");
 
-        while(true){
+        while (true) {
             String text = sc.nextLine();
+
             if (text.isEmpty()){
                 System.out.println("byyye!");
                 break;
             }
 
-            String[] splitText = text.split(" ");
-            for (int i = 0; i < splitText.length; i++){
-                System.out.println(splitText[i]);
-            }
+            String[] splitedText = text.split(" ");
+                for (String sp : splitedText){
+                    if (sp.contains("av")){
+                        System.out.println(sp);
+                    }
+                }
+
         }
+
     }
+
+
 }
+
